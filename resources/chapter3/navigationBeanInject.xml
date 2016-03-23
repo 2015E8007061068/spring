@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ <!-- id 表示你这个组件的名字，class表示组件类 -->
+ <bean id="c" class="cn.javass.spring.chapter3.bean.NavigationC"></bean>
+ <bean id="b" class="cn.javass.spring.chapter3.bean.NavigationB">
+ 	<property name="list"><list></list></property>
+ 	<property name="map"><map></map></property>
+ 	<property name="properties"><props></props></property>
+ </bean>
+ <bean id="a" class="cn.javass.spring.chapter3.bean.NavigationA">
+ 	<!-- 首先注入navigationB确保它非空 -->
+ 	<property name="navigationB" ref="b"></property>
+ 	<!-- 对象图导航注入 -->
+ 	<property name="navigationB.navigationC" ref="c"></property>
+ 	<!-- 注入列表数据类型数据 -->
+ 	<property name="navigationB.list[0]" ref="c"></property>
+ 	<!-- 注入map类型数据 -->
+ 	<property name="navigationB.map[key]" ref="c"></property>
+ 	<!-- 注入properties类型数据 -->
+ 	<property name="navigationB.properties[0]" ref="c"></property>
+ 	<property name="navigationB.properties[1]" ref="c"></property>
+ 	<!-- 注入数组类型数据，注意不要越界 -->
+ 	<property name="navigationB.array[0]" ref="c"></property>
+ </bean>
+ </beans>
