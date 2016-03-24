@@ -9,17 +9,40 @@ import org.springframework.jdbc.support.KeyHolder;
 import cn.javass.spring.chapter9.model.UserModel;
 import cn.javass.spring.chapter9.service.IUserDao;
 
+//public class UserJdbcDaoImpl extends NamedParameterJdbcDaoSupport implements IUserDao {
+//	private final String INSERT_SQL = "insert into user(name) values(:name)";
+//	
+//	private final String COUNT_ALL_SQL = "select count(*) from user";
+//	@Override
+//	public void save(UserModel user){
+//		KeyHolder generatedKeyHolder = new GeneratedKeyHolder();
+//		SqlParameterSource paramSource = new BeanPropertySqlParameterSource(user);
+//		getNamedParameterJdbcTemplate().update(INSERT_SQL, paramSource, generatedKeyHolder);
+//		user.setId(generatedKeyHolder.getKey().intValue());
+//	}
+//	
+//	@Override
+//	public int countAll(){
+//		return getJdbcTemplate().queryForInt(COUNT_ALL_SQL);
+//	}
+//}
 public class UserJdbcDaoImpl extends NamedParameterJdbcDaoSupport implements IUserDao {
-	private final String INSERT_SQL = "insert into user(name) values(:name)";
-	private final String COUNT_ALL_SQL = "select count(*) from user";
-	@Override
-	public void save(UserModel user){
-		KeyHolder generatedKeyHolder = new GeneratedKeyHolder();
-		SqlParameterSource paramSource = new BeanPropertySqlParameterSource(user);
-		getNamedParameterJdbcTemplate().update(INSERT_SQL, paramSource, generatedKeyHolder);
-		user.setId(generatedKeyHolder.getKey().intValue());
-	}
-	public int countAll(){
-		return getJdbcTemplate().queryForInt(COUNT_ALL_SQL);
-	}
+
+    private final String INSERT_SQL = "insert into user(name) values(:name)";
+    private final String COUNT_ALL_SQL = "select count(*) from user";
+
+    
+    @Override
+    public void save(UserModel user) {
+        KeyHolder generatedKeyHolder = new GeneratedKeyHolder();
+        SqlParameterSource paramSource = new BeanPropertySqlParameterSource(user);
+        getNamedParameterJdbcTemplate().update(INSERT_SQL, paramSource, generatedKeyHolder);
+        user.setId(generatedKeyHolder.getKey().intValue());
+    }
+
+    @Override
+    public int countAll() {
+       return getJdbcTemplate().queryForInt(COUNT_ALL_SQL);
+    }
+    
 }

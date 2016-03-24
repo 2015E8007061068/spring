@@ -15,6 +15,10 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 import org.springframework.transaction.support.TransactionTemplate;
 
+import cn.javass.spring.chapter9.model.AddressModel;
+import cn.javass.spring.chapter9.model.UserModel;
+import cn.javass.spring.chapter9.service.IAddressService;
+import cn.javass.spring.chapter9.service.IUserService;
 import junit.framework.Assert;
 
 public class TransactionTest {
@@ -47,6 +51,7 @@ public class TransactionTest {
 	    
 	    private static final String INSERT_SQL = "insert into test(name) values(?)";
 	    private static final String COUNT_SQL = "select count(*) from test";
+	    
 	    
 	    
 	    @BeforeClass
@@ -134,5 +139,46 @@ public class TransactionTest {
 			}
 	    	jdbcTemplate1.update(DROP_TABLE_SQL);
 	    }
+	    
+	    
+	    
+	    
+	   
+	    @Test
+	    public void testServiceTransaction(){
+	    	String[] configLocations = new String[] {
+	    		"classpath:chapter7/applicationContext-resources.xml",
+	    		"classpath:chapter9/dao/applicationContext-jdbc.xml",
+	    		"classpath:chapter9/service/applicationContext-service.xml"
+	    	};
+	    	ApplicationContext ctx2 = new ClassPathXmlApplicationContext(configLocations);
+	    	
+	    	DataSource dataSource2 = ctx2.getBean(DataSource.class);
+	    	JdbcTemplate jdbcTemplate2 = new JdbcTemplate(dataSource2);
+	    	jdbcTemplate2.update(CREATE_USER_TABLE_SQL);
+	    	jdbcTemplate2.update(CREATE_ADDRESS_TABLE_SQL);
+	    	
+	    	IUserService userService =ctx2.getBean("proxyUserService", IUserService.class);
+	    	IAddressService addressService = ctx2.getBean("proxyAddressService", IAddressService.class);
+	    	UserModel user = createDefaultUserModel();
+	    	userService.save(user);
+	    	Assert.assertEquals(1, userService.countAll());
+	    	Assert.assertEquals(1, addressService.countAll());
+	    	jdbcTemplate2.update(DROP_USER_TABLE_SQL);
+	    	jdbcTemplate2.update(DROP_ADDRESS_TABLE_SQL);
+	    }
+	    
+	    private UserModel createDefaultUserModel(){
+	    	UserModel user = new UserModel();
+	    	user.setName("test1");
+	    	AddressModel address = new AddressModel();
+	    	address.setProvince("beijing");
+	    	address.setCity("beijing");
+	    	address.setStreet("haidian");
+	    	user.setAddress(address);
+	    	return user;
+	    }
+	    
+	    
 	    
 }

@@ -1,3 +1,86 @@
 16-03-23 10:11:17,447 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog-1.log
 16-03-23 10:11:17,457 [main] jdbc/test1: refreshed XAResource
 16-03-23 10:11:17,468 [main] jdbc/test2: refreshed XAResource
+16-03-24 20:27:00,438 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog0.log
+16-03-24 20:27:00,440 [main] Done read of logfile
+16-03-24 20:27:00,441 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog0.log
+16-03-24 20:27:00,457 [main] jdbc/test1: refreshed XAResource
+16-03-24 20:27:00,474 [main] jdbc/test2: refreshed XAResource
+16-03-24 20:37:39,792 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog1.log
+16-03-24 20:37:39,794 [main] Done read of logfile
+16-03-24 20:37:39,794 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog1.log
+16-03-24 20:37:39,804 [main] jdbc/test1: refreshed XAResource
+16-03-24 20:37:39,813 [main] jdbc/test2: refreshed XAResource
+16-03-24 20:44:20,073 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog2.log
+16-03-24 20:44:20,074 [main] Done read of logfile
+16-03-24 20:44:20,075 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog2.log
+16-03-24 20:44:20,083 [main] jdbc/test1: refreshed XAResource
+16-03-24 20:44:20,090 [main] jdbc/test2: refreshed XAResource
+16-03-24 20:55:03,017 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog3.log
+16-03-24 20:55:03,019 [main] Done read of logfile
+16-03-24 20:55:03,020 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog3.log
+16-03-24 20:55:03,030 [main] jdbc/test1: refreshed XAResource
+16-03-24 20:55:03,038 [main] jdbc/test2: refreshed XAResource
+16-03-24 21:19:06,326 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog4.log
+16-03-24 21:19:06,328 [main] Done read of logfile
+16-03-24 21:19:06,329 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog4.log
+16-03-24 21:19:06,338 [main] jdbc/test1: refreshed XAResource
+16-03-24 21:19:06,346 [main] jdbc/test2: refreshed XAResource
+16-03-24 21:26:09,305 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog5.log
+16-03-24 21:26:09,307 [main] Done read of logfile
+16-03-24 21:26:09,307 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog5.log
+16-03-24 21:26:09,318 [main] jdbc/test1: refreshed XAResource
+16-03-24 21:26:09,332 [main] jdbc/test2: refreshed XAResource
+16-03-24 21:27:36,732 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog6.log
+16-03-24 21:27:36,733 [main] Done read of logfile
+16-03-24 21:27:36,733 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog6.log
+16-03-24 21:27:36,745 [main] jdbc/test1: refreshed XAResource
+16-03-24 21:27:36,753 [main] jdbc/test2: refreshed XAResource
+16-03-24 21:30:44,924 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog7.log
+16-03-24 21:30:44,925 [main] Done read of logfile
+16-03-24 21:30:44,926 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog7.log
+16-03-24 21:30:44,937 [main] jdbc/test1: refreshed XAResource
+16-03-24 21:30:44,946 [main] jdbc/test2: refreshed XAResource
+16-03-24 21:43:57,736 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog8.log
+16-03-24 21:43:57,738 [main] Done read of logfile
+16-03-24 21:43:57,738 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog8.log
+16-03-24 21:43:57,749 [main] jdbc/test1: refreshed XAResource
+16-03-24 21:43:57,759 [main] jdbc/test2: refreshed XAResource
+16-03-24 21:45:30,741 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog9.log
+16-03-24 21:45:30,742 [main] Done read of logfile
+16-03-24 21:45:30,743 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog9.log
+16-03-24 21:45:30,751 [main] jdbc/test1: refreshed XAResource
+16-03-24 21:45:30,759 [main] jdbc/test2: refreshed XAResource
+16-03-24 23:12:38,980 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog10.log
+16-03-24 23:12:38,983 [main] Done read of logfile
+16-03-24 23:12:38,984 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog10.log
+16-03-24 23:12:38,995 [main] jdbc/test1: refreshed XAResource
+16-03-24 23:12:39,005 [main] jdbc/test2: refreshed XAResource
+16-03-24 23:26:13,457 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog11.log
+16-03-24 23:26:13,458 [main] Done read of logfile
+16-03-24 23:26:13,459 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog11.log
+16-03-24 23:26:13,471 [main] jdbc/test1: refreshed XAResource
+16-03-24 23:26:13,478 [main] jdbc/test2: refreshed XAResource
+16-03-24 23:28:13,616 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog12.log
+16-03-24 23:28:13,618 [main] Done read of logfile
+16-03-24 23:28:13,619 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog12.log
+16-03-24 23:28:13,631 [main] jdbc/test1: refreshed XAResource
+16-03-24 23:28:13,641 [main] jdbc/test2: refreshed XAResource
+16-03-24 23:36:47,949 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog13.log
+16-03-24 23:36:47,951 [main] Done read of logfile
+16-03-24 23:36:47,951 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog13.log
+16-03-24 23:36:47,964 [main] jdbc/test1: refreshed XAResource
+16-03-24 23:36:47,972 [main] jdbc/test2: refreshed XAResource
+16-03-24 23:45:59,702 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog14.log
+16-03-24 23:45:59,705 [main] Done read of logfile
+16-03-24 23:45:59,705 [main] Logfile closed: C:\Users\xd\workspace\spring1\.\tmlog14.log
+16-03-24 23:45:59,714 [main] jdbc/test1: refreshed XAResource
+16-03-24 23:45:59,722 [main] jdbc/test2: refreshed XAResource
+16-03-25 24:19:54,407 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog15.log
+16-03-25 24:19:54,409 [main] Done read of logfile
+16-03-25 24:19:54,420 [main] jdbc/test1: refreshed XAResource
+16-03-25 24:19:54,430 [main] jdbc/test2: refreshed XAResource
+16-03-25 01:22:17,273 [main] Starting read of logfile C:\Users\xd\workspace\spring1\.\tmlog16.log
+16-03-25 01:22:17,274 [main] Done read of logfile
+16-03-25 01:22:17,282 [main] jdbc/test1: refreshed XAResource
+16-03-25 01:22:17,289 [main] jdbc/test2: refreshed XAResource
